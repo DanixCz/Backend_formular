@@ -23,20 +23,13 @@ main{
     box-sizing: border-box;
 }
 
-h2{
-    margin: 0 0 12px 0;
-    font-size: 20px;
-    text-align: center;
-    color: #0b2545;
-}
-
 form{
     display: flex;
     flex-direction: column;
     gap: 12px;
 }
 
-label{ /* small helper if you add explicit labels */
+label{
     font-size: 13px;
     color: #334155;
     font-weight: 600;

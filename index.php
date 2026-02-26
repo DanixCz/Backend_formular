@@ -39,6 +39,15 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <title>Document</title>
+
+<!--
+https://www.geeksforgeeks.org/php/how-to-insert-form-data-into-database-using-php/
+https://www.w3schools.com/html/html_form_attributes.asp
+https://www.w3schools.com/php/php_forms.asp
+https://www.w3schools.com/php/php_form_validation.asp
+https://www.w3schools.com/php/php_form_required.asp
+
+-->
 </head>
 <body>
     <main>
@@ -82,5 +91,3 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     </main>
 </body>
 </html>
-
-<script src="script.js"></script>
