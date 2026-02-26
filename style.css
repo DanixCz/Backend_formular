@@ -1,25 +1,93 @@
 body{
-    margin: 0px;
+    margin: 0;
+    font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+    background: #f4f7fb;
+    color: #0f172a;
 }
 
 main{
+    min-height: 100vh;
     display: flex;
-    justify-content: center;
     align-items: center;
+    justify-content: center;
+    padding: 32px;
+}
+
+.center{
+    width: 100%;
+    max-width: 640px;
+    background: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 8px 24px rgba(15, 23, 42, 0.06);
+    padding: 28px;
+    box-sizing: border-box;
+}
+
+h2{
+    margin: 0 0 12px 0;
+    font-size: 20px;
+    text-align: center;
+    color: #0b2545;
 }
 
 form{
     display: flex;
-    justify-content: center;
-    align-items: center;
     flex-direction: column;
+    gap: 12px;
 }
 
-.center{
-    height: 700px;
-    width: 500px;
+label{ /* small helper if you add explicit labels */
+    font-size: 13px;
+    color: #334155;
+    font-weight: 600;
+}
+
+input[type="text"], textarea{
+    width: 100%;
+    padding: 10px 12px;
+    border: 1px solid #e6e9ee;
+    border-radius: 8px;
+    background: #fbfdff;
+    font-size: 14px;
+    color: #0f172a;
+    box-sizing: border-box;
+}
+
+textarea{ min-height: 110px; resize: vertical; }
+
+input[type="submit"]{
+    padding: 10px 16px;
+    align-self: flex-end;
+    background: #2563eb;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: 600;
+    transition: background .12s ease;
+}
+
+input[type="submit"]:hover{ background: #1e40af; }
+
+#submissions{
+    margin-top: 18px;
     display: flex;
-    justify-content: center;
-    align-items: center;
     flex-direction: column;
+    gap: 12px;
+}
+
+.submitted{
+    border: 1px solid #e6eef8;
+    background: #fbfdff;
+    padding: 14px;
+    border-radius: 8px;
+}
+
+.cloned-form{ display:flex; flex-direction:column; gap:8px; }
+
+.saved-meta{ font-size:12px; color:#64748b; margin-top:8px; text-align:right; }
+
+@media (max-width: 600px){
+    .center{ padding: 18px; border-radius: 8px; }
+    input[type="submit"]{ width: 100%; align-self: stretch; }
 }
